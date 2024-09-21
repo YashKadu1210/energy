@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="resume-builder">
+    <h1>MY RESUME</h1>
+    <form id="resume-form">
+      
+      <h2>Personal Information</h2>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullname" pattern="[A-Za-z\s]+" required><br>
+      <label for="address">Address:</label>
+      <input type="text" id="address" required><br>
+      <label for="mobile">Mobile No:</label>
+      <input type="tel" id="mobile" pattern="[0-9]{10}" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br>
+      <label for="hobbies">Hobbies:</label>
+      <input type="text" id="hobbies"><br>
+
+      <h2>Educational Qualifications</h2>
+      <div id="eduQualifications">
+        <div class="edu-item">
+          <label for="eduDegree">Degree:</label>
+          <input type="text" class="eduDegree" required><br>
+          <label for="eduUniversity">University/Board:</label>
+          <input type="text" class="eduUniversity" required><br>
+          <label for="eduYear">Graduation/Passing Year:</label>
+          <input type="number" class="eduYear" required><br>
+          
+        </div>
+      </div>
+
+     
+
+      <h2>Certifications/Awards</h2>
+      <div id="certifications">
+        <div class="certification-item">
+          <label for="certificationTitle">Title:</label>
+          <input type="text" class="certificationTitle" required><br>
+          <label for="certificationOrganization">Organization:</label>
+          <input type="text" class="certificationOrganization" required><br>
+          <label for="certificationYear">Year:</label>
+          <input type="number" class="certificationYear" required><br>
+         
+        </div>
+      </div>
+
+      <h2>Experience</h2>
+      <div id="experiences">
+        <div class="experience-item">
+          <label for="experienceTitle">Position:</label>
+          <input type="text" class="experienceTitle" required><br>
+          <label for="experienceOrganization">Organization:</label>
+          <input type="text" class="experienceOrganization" required><br>
+          <label for="experienceDuration">Duration:</label>
+          <input type="number" class="experienceDuration" required><br>
+         
+        </div>
+      </div>
+
+      <h2>Skills</h2>
+      <div id="skills">
+        <input type="text" class="skill" required><br>
+       
+      </div>
+
+      <h2>Photo</h2>
+      <input type="file" id="photo" accept="image/*"><br>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="display-resume" style="display: none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

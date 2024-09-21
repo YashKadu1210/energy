@@ -1,0 +1,81 @@
+
+#resume-builder {
+    max-width: 800px;
+    margin:  auto;
+    padding: 30px;
+    background-color: gray;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    position: center; 
+}
+
+#resume-form {
+    margin-bottom: 20px;
+}
+
+#resume-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#resume-form input[type="text"],
+#resume-form input[type="tel"],
+#resume-form input[type="email"],
+#resume-form input[type="number"],
+#resume-form input[type="file"],
+#resume-form textarea { 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#resume-form button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resume-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#display-resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none;
+    background-color: #fff;
+    position: relative; 
+}
+
+#display-resume h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: BLACK;
+}
+
+#display-resume p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#display-resume img {
+    max-width: 250px; 
+    height: 15
+	0px;
+    position: absolute; 
+    top: 40px; 
+    right: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
